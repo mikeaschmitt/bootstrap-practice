@@ -3,9 +3,6 @@
 <head>
   
 <link type="text/css" rel="stylesheet" href="css/bootstrap.css"/>
-<script>
-  window.alert("My first script");
-</script>
 <style>
   .container {
     background-color:lightgray;
@@ -19,25 +16,95 @@
 
 <body>
 
-<div class="container-fluid">
-  <div class="row">
-    <dif class="cql-xs-6 col-sm-6 col-md-6">
-      <p>Lorem ipsum</p>
-    </dif>
-    <dif class="cql-xs-3 col-sm-3 col-md-3">
-      <p>Lorem ipsum</p>
-    </dif>
-    <dif class="cql-xs-3 col-sm-3 col-md-3">
-      <p>Lorem ipsum</p>
-    </dif>
-  </div>
-</div>
 
-<div class="container">
+    <div class="content-wrapper">
+      
+      <div class="navbar navbar-inverse navbar-extra">
+        <div class="container">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand narrow-display" href="#">LeetCode OJ</a>
+          </div>
+          <div class="navbar-collapse collapse">
+            <a class="navbar-brand" href="#">LeetCode OJ</a>
+            <ul class="nav navbar-nav">
+              
+              <li id="subscribe">
+                <a href="#"><font color="orange">LeetCode Premium Subscription</font></a>
+              </li>
+              
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+                  Problems
+                  <span class="caret"></span>
+                </a>
+                <ul class="dropdown-menu" role="menu">
+                  
+                  <li><a href="#">Algorithms</a></li>
+                  
+                  <li><a href="#">Database</a></li>
+                  
+                  <li><a href="#">Shell</a></li>
+                  
+                </ul>
+              </li>
+              <li id="pickNav"><a onclick="ga('send', 'event', 'pick-one', 'click');" href="#">Pick One</a></li>
+              
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown"
+                     role="button" aria-expanded="false">
+                    Mock
+                    <span class="caret"></span>
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li>
+                      <a href="#">Mock Interview</a>
+                    </li>
+                    <li>
+                      <a href="#">Past Sessions</a>
+                    </li>
+                  </ul>
+                </li>
+
+              
+              <li id="articlesNav"><a href="#">Articles</a></li>
+              <!-- TODO: not hard code -->
+              
+              <li id=""><a href="#">Discuss</a></li>
+              
+              
+              <li id="bookNav"><a onclick="ga('send', 'event', 'book', 'click', 'nav-bar');" href="#"><font color="#ed9c28">Book</font></a></li>
+              
+              
+              
+              
+            </ul>
+            
+            <div class="navbar-form navbar-right">
+              <a class="btn btn-primary" href="#">Sign up</a>
+              <a class="btn btn-default" href="#">Sign in</a>
+            </div>
+            
+            <!--
+            <form class="navbar-form pull-right">
+              <input class="col-md-2" type="text" placeholder="Email">
+              <input class="col-md-2" type="password" placeholder="Password">
+              <button type="submit" class="btn">Sign in</button>
+            </form>
+            -->
+          </div><!--/.navbar-collapse -->
+      <!-- Main component for a primary marketing message or call to action -->
   <h1>Bootstrap Practice</h1>
   <p>Time for another mini project. Have a cup of coffee and let's continue...</p>
   <img src="http://i.imgur.com/hRXCOkU.gif" class="img-rounded"/>
-</div>
+        </div>
+      </div>
+
+
    
 </body>
 
