@@ -3,13 +3,102 @@
 <head>
   
 <link type="text/css" rel="stylesheet" href="css/bootstrap.css"/>
-<style>
-  .container {
-    background-color:lightgray;
-    margin-top:30px;
-    padding-bottom:30px;
-   }
-</style>
+  
+    <style>
+      body {
+        overflow-y: scroll;
+        background-color:#373737;
+      }
+      a {
+        color: #0088cc;
+      }
+      a:hover {
+        color: #005580;
+      }
+      .form-signin {
+        max-width: 300px;
+        padding: 19px 29px 29px;
+        margin: 0 auto 20px;
+        background-color: #fff;
+        border: 1px solid #e5e5e5;
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        border-radius: 5px;
+        -webkit-box-shadow: 0 1px 2px rgba(0,0,0,.05);
+        -moz-box-shadow: 0 1px 2px rgba(0,0,0,.05);
+        box-shadow: 0 1px 2px rgba(0,0,0,.05);
+      }
+      .block-center {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+      }
+      .message {
+         border: 1px solid #e6db55;
+         background-color: #ffffe0;
+         padding: 15px 30px 15px 15px;
+         margin: 20px 0;
+       }
+      .navbar-extra {
+         border-radius: 0px;
+         margin-bottom: 30px;
+      }
+      #chat-link {
+        position: fixed;
+        right: 5px;
+        bottom: 10px;
+        background: #fff;
+        border: 1px solid #e0e0e0;
+        padding: 5px 15px 10px 15px;
+        -webkit-border-radius: 5px 0 0 5px;
+        -moz-border-radius: 5px 0 0 5px;
+        -ms-border-radius: 5px 0 0 5px;
+        -o-border-radius: 5px 0 0 5px;
+        border-radius: 5px 0 0 5px;
+        -webkit-box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+        -moz-box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+        box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+        color: #979faf;
+      }
+      .glyphicon-envelope {
+        text-align: center;
+        line-height: 26px;
+        margin-right: 5px;
+        position: relative;
+      }
+      .ac {
+        display: inline-block;
+        height: 16px;
+        width: 16px;
+        background-image: url('/static/images/correct.png');
+        background-repeat: no-repeat;
+      }
+      .notac {
+        display: inline-block;
+        height: 16px;
+        width: 16px;
+        background-image: url('/static/images/question.png');
+        background-repeat: no-repeat;
+      }
+      #subscribe {
+        background-color: #373737;
+      }
+
+        .navbar-brand.narrow-display {
+          display: none;
+        }
+        #navBar-right {
+            position:absolute;
+            display:inline-block;
+            right: 0px;
+        }
+      
+
+      html, body {
+        height: 100%;
+      }
+
+    </style>
 <title>Bootstrap Practice</title>
 
 </head>
@@ -27,7 +116,6 @@
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand narrow-display" href="#">LeetCode OJ</a>
           </div>
           <div class="navbar-collapse collapse">
             <a class="navbar-brand" href="#">LeetCode OJ</a>
